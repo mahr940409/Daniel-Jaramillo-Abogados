@@ -1,0 +1,109 @@
+/* Estilos específicos para el header móvil */
+@media (max-width: 768px) {
+  .header {
+    background: #2d2d2d !important;
+    border-bottom: 2px solid #ffd700 !important;
+    padding: 0.5rem 0 !important;
+  }
+  
+  .nav {
+    padding: 0 15px !important;
+  }
+  
+  .nav-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+  }
+  
+  .logo-icon {
+    font-size: 2rem !important;
+    color: #ffd700 !important;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6) !important;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.4)) !important;
+  }
+  
+  .nav-brand h2 {
+    font-size: 1rem !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+  }
+  
+  .nav-brand h2::before {
+    content: "Abogados" !important;
+    color: #ffd700 !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 2px !important;
+    font-weight: 700 !important;
+  }
+  
+  .hamburger-menu {
+    display: flex !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .hamburger-line {
+    background: #ffffff !important;
+    border-radius: 2px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    background: #2d2d2d !important;
+    border-bottom: 2px solid #ffd700 !important;
+    padding: 0.4rem 0 !important;
+  }
+  
+  .nav-brand h2 {
+    font-size: 0.9rem !important;
+    color: #ffffff !important;
+  }
+  
+  .nav-brand h2::before {
+    font-size: 0.7rem !important;
+    color: #ffd700 !important;
+  }
+  
+  .logo-icon {
+    font-size: 1.8rem !important;
+    color: #ffd700 !important;
+  }
+  
+  .hamburger-menu {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    background: #2d2d2d !important;
+    border-bottom: 2px solid #ffd700 !important;
+    padding: 0.3rem 0 !important;
+  }
+  
+  .nav-brand h2 {
+    font-size: 0.8rem !important;
+    color: #ffffff !important;
+  }
+  
+  .nav-brand h2::before {
+    font-size: 0.6rem !important;
+    color: #ffd700 !important;
+  }
+  
+  .logo-icon {
+    font-size: 1.5rem !important;
+    color: #ffd700 !important;
+  }
+  
+  .hamburger-menu {
+    width: 26px !important;
+    height: 26px !important;
+  }
+} 
