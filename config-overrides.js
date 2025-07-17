@@ -5,9 +5,10 @@ module.exports = function override(config, env) {
   );
 
   if (sourceMapLoaderRule) {
-    // Add exclude pattern for @mediapipe/tasks-vision
+    // Ensure exclude is an array and add exclude pattern for @mediapipe/tasks-vision
+    const currentExclude = sourceMapLoaderRule.exclude;
     sourceMapLoaderRule.exclude = [
-      ...(sourceMapLoaderRule.exclude || []),
+      ...(Array.isArray(currentExclude) ? currentExclude : []),
       /node_modules\/@mediapipe\/tasks-vision/
     ];
   }
